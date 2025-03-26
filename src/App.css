@@ -18,6 +18,7 @@
     color: var(--blanco-oscuro);
     padding: 4px;
     border: solid 4px var(--blanco-claro);
+    text-align: center;
     border-radius: 1rem;
 }
 .nav{
@@ -81,7 +82,7 @@
 .subitem:hover{
     background-color: var(--azul-claro);
 }
-@media (max-width: 390px){
+@media (min-width: 340px) and (max-width: 440px){
     .header{
         flex-direction: column;
     }
