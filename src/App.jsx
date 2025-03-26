@@ -26,7 +26,7 @@ function App() {
                 </Link>
               </li>
               <li className="list-item">
-                <a href="#" className="item">Mutaciones</a>
+                <a href="#" className="item-special">Mutaciones</a>
                 <ul className="subnav-list">
                   <li className="sublist-item">
                     <Link className="subitem" to="/Periquito-Yellow/Dominantes">Dominantes</Link>
@@ -43,7 +43,7 @@ function App() {
                 </ul>
               </li>
               <li className="list-item">
-                <a href="#" className="item">Cuidados</a>
+                <a href="#" className="item-special">Cuidados</a>
                 <ul className="subnav-list">
                   <li className="sublist-item">
                     <Link className="subitem" to="/Periquito-Yellow/Alimentacion">Alimentacion</Link>
