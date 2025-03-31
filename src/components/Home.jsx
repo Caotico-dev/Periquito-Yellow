@@ -1,5 +1,11 @@
+import Card from './Card.jsx';
+
 function Home() {
-  return <h1>Hello World Route dom</h1>;
+  return (
+    <div className="container">
+      <Card />
+    </div>
+  );
 }
 
 export default Home;

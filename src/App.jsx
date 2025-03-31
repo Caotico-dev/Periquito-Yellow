@@ -1,5 +1,5 @@
 import Home from "./components/Home.jsx";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 import "./App.css";
 import PageAlimentacion from './components/PageAlimentacion.jsx';
 import PageAlojamiento from './components/PageAlojamiento.jsx';
@@ -26,7 +26,7 @@ function App() {
                 </Link>
               </li>
               <li className="list-item">
-                <a href="#" className="item-special">Mutaciones</a>
+                <span className="item-special">Mutaciones</span>
                 <ul className="subnav-list">
                   <li className="sublist-item">
                     <Link className="subitem" to="/Periquito-Yellow/Dominantes">Dominantes</Link>
@@ -43,7 +43,7 @@ function App() {
                 </ul>
               </li>
               <li className="list-item">
-                <a href="#" className="item-special">Cuidados</a>
+                <span className="item-special">Cuidados</span>
                 <ul className="subnav-list">
                   <li className="sublist-item">
                     <Link className="subitem" to="/Periquito-Yellow/Alimentacion">Alimentacion</Link>
@@ -64,6 +64,7 @@ function App() {
         </header>
       </>
       <Routes>
+        <Route path="/Periquito-Yellow" element={<Navigate to="/Periquito-Yellow/home" />} />
         <Route path="/Periquito-Yellow/home" element={<Home />} />
         <Route path="/Periquito-Yellow/Dominantes" element={<PageDominante/>} />
         <Route path="/Periquito-Yellow/Recesivas" element={<PageRecesivas/>} />

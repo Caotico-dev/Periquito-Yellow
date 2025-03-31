@@ -38,6 +38,7 @@
 .item,
 .item-special{
     text-decoration: none;
+    cursor: pointer;
     color: var(--blanco-oscuro);
 }
 .item-special::after{
@@ -94,4 +95,51 @@
         display: none;
     }   
     
+}
+/* Utilitis */
+.container{
+    margin: 0 auto;
+    max-width: 80%;
+}
+/* Style Page/
+
+/* Styles components */
+/* Card */
+.card-section{    
+    display: grid;
+    background-color: var(--blanco-oscuro);
+    padding: 1rem;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 2.4rem 1fr;    
+    gap: 1rem;
+    margin-top: 1rem;
+    border: solid 1px var(--verde-claro);
+}
+.card-tittle{
+    grid-column: 1/2; 
+    grid-row: 1/2;
+    text-align: center;
+    margin: 0;
+    border: solid 1px var(--verde-claro);
+    color: var(--azul-oscuro);     
+}
+.card-img{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+}
+
+.card-container-text .card-text:first-child{
+    margin-top: 0;
+}
+.card-text{
+    grid-column: 2/3;
+    grid-row: 1/3;    
+    text-align: justify;
+    color: var(--azul-oscuro);
+    margin-bottom: 1rem;
+
 }
