@@ -1,145 +1,174 @@
-:root{
-    --blanco-oscuro: #fbfcfc;
-    --blanco-claro: #fdfefe;
-    --azul-oscuro: #2e86c1;
-    --azul-claro: #3498db;
-    --verde-oscuro: #28b463;
-    --verde-claro: #2ecc71;
+:root {
+  --blanco-oscuro: #fbfcfc;
+  --blanco-claro: #fdfefe;
+  --azul-oscuro: #2e86c1;
+  --azul-claro: #3498db;
+  --verde-oscuro: #28b463;
+  --verde-claro: #2ecc71;
 }
-.header{
-    display: flex;
-    flex-direction: row;    
-    background-color: var(--azul-claro);
-    padding: 1rem;
-    justify-content: center;
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--azul-claro);
+  padding: 1rem;
+  justify-content: center;
 }
-.header-title{
-    margin: 0;
-    color: var(--blanco-oscuro);
-    padding: 4px;
-    border: solid 4px var(--blanco-claro);
-    text-align: center;
-    border-radius: 1rem;
+.header-title {
+  margin: 0;
+  color: var(--blanco-oscuro);
+  padding: 4px;
+  border: solid 4px var(--blanco-claro);
+  text-align: center;
+  border-radius: 1rem;
 }
-.nav{
-    margin: 0rem 1rem 0 1rem;
+.nav {
+  margin: 0rem 1rem 0 1rem;
 }
-.nav-list{
-    display: flex;
-    flex-direction: row;
-    padding: 0;
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
 }
-.list-item{
-    padding: 0rem 1rem 0 1rem;
-    list-style: none; 
-    position: relative;
-
+.list-item {
+  padding: 0rem 1rem 0 1rem;
+  list-style: none;
+  position: relative;
 }
 .item,
-.item-special{
-    text-decoration: none;
-    cursor: pointer;
-    color: var(--blanco-oscuro);
+.item-special {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--blanco-oscuro);
 }
-.item-special::after{
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left:  7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid var(--blanco-oscuro);
-    margin-left: 8px;
-    transition: transform 0.7s;
+.item-special::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid var(--blanco-oscuro);
+  margin-left: 8px;
+  transition: transform 0.7s;
 }
-.list-item:hover > .item-special::after{
-    transform: rotate(180deg);
+.list-item:hover > .item-special::after {
+  transform: rotate(180deg);
 }
-.list-item:hover > .subnav-list{
-    display:  block;
-       
-} 
-.subnav-list{
+.list-item:hover > .subnav-list {
+  display: block;
+}
+.subnav-list {
+  display: none;
+  position: absolute;
+  background-color: var(--azul-oscuro);
+  box-shadow: -1rem 1rem 7rem var(--blanco-oscuro);
+  border-radius: 4%;
+  padding: 1rem;
+  z-index: 1;
+  width: 100%;
+}
+.sublist-item {
+  list-style: none;
+}
+.subitem {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--blanco-claro);
+  transition: background-color 0.5s;
+  padding: 0.5rem;
+}
+.subitem:hover {
+  background-color: var(--azul-claro);
+}
+@media (min-width: 340px) and (max-width: 440px) {
+  .header {
+    flex-direction: column;
+    padding: 0.3rem;
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .subnav-list {
+    position: static;
     display: none;
-    position: absolute;
-    background-color: var(--azul-oscuro);
-    box-shadow: -1rem 1rem 7rem var(--blanco-oscuro);
-    border-radius: 4%;
-    padding: 1rem;
-    z-index: 1;
-    width: 100%;
+  }
 }
-.sublist-item{
-    list-style: none;
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--azul-oscuro);
+  margin-top: 1rem;
+  padding: 1rem;
+  justify-content: space-evenly;
 }
-.subitem{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: var(--blanco-claro);
-    transition: background-color 0.5s;
-    padding: 0.5rem;
+.footer-text {
+  margin: 0;
+  color: var(--blanco-oscuro);
+  padding: 4px;
+  border: solid 4px var(--blanco-claro);
+  text-align: center;
+  border-radius: 1rem;
 }
-.subitem:hover{
-    background-color: var(--azul-claro);
+@media (min-width: 340px) and (max-width: 440px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-text {
+    margin: 0.2rem;
+    font-size: small;
+  }
 }
-@media (min-width: 340px) and (max-width: 440px){
-    .header{
-        flex-direction: column;
-    }
-    .nav-list{
-        flex-direction: column;
-    }    
-    .subnav-list{
-        position: static;
-        display: none;
-    }   
-    
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer-text {
+    font-size: small;
+  }
 }
 /* Utilitis */
-.container{
-    margin: 0 auto;
-    max-width: 80%;
+.container {
+  margin: 0 auto;
+  max-width: 80%;
 }
 /* Style Page/
 
 /* Styles components */
 /* Card */
-.card-section{    
-    display: grid;
-    background-color: var(--blanco-oscuro);
-    padding: 1rem;
-    grid-template-columns:  1fr 1fr;
-    grid-template-rows: 2.4rem 1fr;    
-    gap: 1rem;
-    margin-top: 1rem;
-    border: solid 1px var(--verde-claro);
+.card-section {
+  display: grid;
+  background-color: var(--blanco-oscuro);
+  padding: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.4rem 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  border: solid 1px var(--verde-claro);
 }
-.card-tittle{
-    grid-column: 1/2; 
-    grid-row: 1/2;
-    text-align: center;
-    margin: 0;
-    border: solid 1px var(--verde-claro);
-    color: var(--azul-oscuro);     
+.card-tittle {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+  margin: 0;
+  border: solid 1px var(--verde-claro);
+  color: var(--azul-oscuro);
 }
-.card-img{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
+.card-img {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
-.card-container-text .card-text:first-child{
-    margin-top: 0;
+.card-container-text .card-text:first-child {
+  margin-top: 0;
 }
-.card-text{
-    grid-column: 2/3;
-    grid-row: 1/3;    
-    text-align: justify;
-    color: var(--azul-oscuro);
-    margin-bottom: 1rem;
-
+.card-text {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  text-align: justify;
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
 }
