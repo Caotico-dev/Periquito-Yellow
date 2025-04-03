@@ -131,6 +131,12 @@
   margin: 0 auto;
   max-width: 80%;
 }
+.border{
+  background-color: var(--blanco-oscuro);
+  border: solid 1px var(--verde-claro);
+  padding: 1rem;
+  margin-top: 1rem;
+}
 .alert{
     background-color: yellow;
     text-align: center;    
@@ -298,4 +304,37 @@
         text-align: justify;
     }
    
+}
+/* SimpleCard */
+.simple-card-title{
+    text-align: center;
+    margin: 0;
+    color: var(--azul-oscuro);
+    padding: 0.25rem;
+    border: solid 1px var(--verde-claro);
+}
+.sc-container-text{
+  border: solid 1px var(--verde-claro);
+  margin-top: 0.25rem;  
+  padding: 0.25rem;
+}
+.simple-card-text{
+  margin: 0.2rem;
+  color: var(--azul-oscuro);
+}
+.sc-container-subtopics{
+  border: solid 1px var(--verde-claro);  
+    margin-top: 0.25rem;  
+    padding: 0.25rem;
+}
+.sc-subtopics-title{
+  text-align: center;
+  margin: 0;
+  color: var(--azul-oscuro);
+  padding: 0.25rem;
+  border: solid 1px var(--verde-claro);
+}
+.sc-subtopics-text{
+  margin: 0.2rem;
+  color: var(--azul-oscuro);
 }
