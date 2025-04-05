@@ -29,14 +29,16 @@ function SimpleCard({
           </p>
         ))}
       </div>
-      <div className="sc-container-subtopics">
-        {subtopics.map((subtopics, index) => (
-          <div className="sc-subtopic" key={index}>
-            <h3 className="sc-subtopics-title">{subtopics.title}</h3>
-            <p className="sc-subtopics-text">{subtopics.text}</p>
-          </div>
-        ))}
-      </div>
+      {subtopics.length > 0 && (
+        <div className="sc-container-subtopics">
+          {subtopics.map((subtopic, index) => (
+            <div className="sc-subtopic" key={index}>
+              <h3 className="sc-subtopics-title">{subtopic.title}</h3>
+              <p className="sc-subtopics-text">{subtopic.text}</p>
+            </div>
+          ))}
+        </div>
+      )}
     </section>
   );
 }
