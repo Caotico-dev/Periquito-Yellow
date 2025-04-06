@@ -338,6 +338,19 @@
   margin: 0.2rem;
   color: var(--azul-oscuro);
 }
+@media (min-width: 340px) and (max-width: 440px){
+    .simple-card-text{
+        text-align: justify;
+        font-size: small;
+    }   
+    .sc-subtopics-title{
+      font-size: small;
+    }
+    .sc-subtopics-text{
+        font-size: small;
+    }
+  
+}
 /* Spacial Card */
 .spacial-card-title{
     text-align: center;
@@ -449,6 +462,10 @@
     }
     .spacial-card-text{
         text-align: justify;
+    }
+    .spacial-card-img{
+        width: 98%;
+        margin: 0.2rem 0 0.2rem 0;        
     }
     .spacial-card-imglup{
       margin: 0.3rem 0 0.3rem 0;
