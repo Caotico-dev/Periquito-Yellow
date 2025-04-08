@@ -372,7 +372,7 @@
   height: 90%;
   max-height: 18.969rem;
   border-radius: 1rem;
-  object-fit: cover;
+  object-fit: scale-down;
   border: solid 1px var(--verde-claro);
   padding: 0.25rem;
 }
