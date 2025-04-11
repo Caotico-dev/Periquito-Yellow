@@ -1,5 +1,5 @@
-import image from "../assets/images/images-m-color/periquito-azul.jpg";
-import imagelupa from "../assets/images/images-m-color/periquito-azul-lupa.png";
+import image from "../assets/images/images-m-patron-plumas/periquito-alas-claras.jpg";
+import imagelupa from "../assets/images/images-m-patron-plumas/periquito-alas-claras-lupa.png";
 
 function SpacialCard({
   title = "Periquito Azul",
@@ -49,9 +49,9 @@ function SpacialCard({
             </p>
           ))}
         </div>
-
-        <img className="spacial-card-imglup" src={imagelup} alt={title} />
-
+        <div className="m-spacial-card">
+          <img className="spacial-card-imglup" src={imagelup} alt={title} />
+        </div>
         <div className="spacial-card-container-crt">
           {crt.map((crt, index) => (
             <div className="spacial-card-crt" key={index}>
