@@ -14,6 +14,10 @@ import p_perladol from "../assets/images/images-m-patron/periquito-perlado-lupa.
 // imagenes periquito crestado
 import p_crestado from "../assets/images/images-m-patron/periquito-crestado.jpg";
 import p_crestadol from "../assets/images/images-m-patron/periquito-crestado-lupa.png";
+// imagen periquito cara negra
+import p_caranegra from "../assets/images/images-m-patron-plumas/periquito-cara-negra.jpg";
+import p_caranegral from "../assets/images/images-m-patron-plumas/periquito-cara-negra-lupa.png";
+
 function PageDominante() {
   return (
     <div className="container">
@@ -147,6 +151,62 @@ function PageDominante() {
             listcrt: [
               "La mutación crestada es dominante, lo que significa que si uno de los progenitores es portador del gen, es probable que los descendientes hereden la cresta.",
               "Los periquitos crestados pueden ser cruzados con otras mutaciones, y si uno de los padres tiene la cresta, es probable que los descendientes también la desarrollen. Sin embargo, no todos los descendientes necesariamente mostrarán este rasgo si ambos padres no lo tienen.",
+            ],
+          },
+        ]}
+      />
+      <SpacialCard
+        title="Periquito Pio Dominante"
+        imagef={p_piodominante}
+        imagelup={p_piodominantel}
+        text={[
+          'El periquito pío dominante es una mutación de color muy llamativa y única en los periquitos (Melopsittacus undulatus). Estos periquitos presentan un patrón de plumaje caracterizado por una combinación irregular de colores sólidos y áreas blancas o amarillas, lo que les da un aspecto "manchado" o "moteado". La mutación "pío" se refiere a la distribución del color, y en este caso, la mutación pío dominante es genética y bastante fuerte, lo que significa que si uno de los padres es pío dominante, hay una alta probabilidad de que las crías también lo sean.',
+        ]}
+        crt={[
+          {
+            title: "Patron de plumaje",
+            listcrt: [
+              "Los periquitos pío dominantes tienen un plumaje en el que el color base (que puede ser verde, azul o cualquier otro color) está interrumpido por áreas de blanco o amarillo en varias partes del cuerpo.",
+              "El patrón puede variar significativamente entre un periquito y otro, lo que hace que no haya dos periquitos píos exactamente iguales. Algunas áreas del cuerpo pueden ser completamente blancas o amarillas, mientras que otras conservan los colores del periquito tradicional.",
+              "El color de la cabeza también puede ser parcialmente blanco o amarillo, en lugar de cubrirse totalmente de ese color como en los periquitos estándar.",
+            ],
+          },
+          {
+            title: "Herencia Genetica",
+            listcrt: [
+              'La mutación "pío dominante" se transmite de manera dominante, lo que significa que si uno de los padres tiene esta mutación, hay una alta probabilidad de que las crías hereden el patrón pío.',
+              "A diferencia del pío recesivo, en el cual ambos padres deben portar el gen para que el rasgo se exprese, en el pío dominante solo uno de los padres necesita ser pío para que los hijos puedan tener la mutación.",
+            ],
+          },
+        ]}
+      />
+      <SpacialCard
+        title="Periquito Cara Negra"
+        imagef={p_caranegra}
+        imagelup={p_caranegral}
+        text={[
+          "El periquito de cara negra es una mutación genética en los periquitos (Melopsittacus undulatus) que se caracteriza por una coloración oscura en la cara del ave, generalmente de un color negro o gris oscuro, en contraste con el resto del cuerpo. Esta mutación es bastante llamativa y no tan común, lo que la hace muy apreciada por los criadores y aficionados a las aves.",
+        ]}
+        crt={[
+          {
+            title: "Patron del pluma",
+            listcrt: [
+              "El rasgo más distintivo del periquito de cara negra es la cara completamente oscura, que generalmente tiene una tonalidad negra o gris oscuro. Esta coloración puede cubrir completamente la cara, incluyendo la frente, las mejillas y alrededor de los ojos, mientras que el resto del cuerpo mantiene los colores típicos de su mutación base (como verde, azul, amarillo, etc.).",
+              "El contraste entre la cara oscura y el resto del cuerpo es muy marcado, lo que hace que el periquito de cara negra sea fácilmente reconocible.",
+            ],
+          },
+          {
+            title: "Coloración del cuerpo",
+            listcrt: [
+              "El resto del cuerpo del periquito de cara negra puede variar según la mutación base, lo que significa que puede haber periquitos de cara negra en colores como el verde, azul, blanco, o incluso lutino (amarillo), pero siempre con la característica cara oscura.",
+              "La mutación de la cara negra afecta principalmente la región facial, por lo que el resto del cuerpo puede mantener sus colores habituales.",
+            ],
+          },
+          {
+            title: "Herencia genética",
+            listcrt: [
+              "La mutación de cara negra es dominante, lo que significa que solo se necesita un solo gen de cara negra para que la característica se exprese en el ave.",
+              "Si un periquito tiene al menos un progenitor con la mutación de cara negra, hay una alta probabilidad de que su descendencia también herede esta característica, aunque la intensidad de la coloración facial puede variar.",
             ],
           },
         ]}
