@@ -154,32 +154,7 @@ function PageDominante() {
             ],
           },
         ]}
-      />
-      <SpacialCard
-        title="Periquito Pio Dominante"
-        imagef={p_piodominante}
-        imagelup={p_piodominantel}
-        text={[
-          'El periquito pío dominante es una mutación de color muy llamativa y única en los periquitos (Melopsittacus undulatus). Estos periquitos presentan un patrón de plumaje caracterizado por una combinación irregular de colores sólidos y áreas blancas o amarillas, lo que les da un aspecto "manchado" o "moteado". La mutación "pío" se refiere a la distribución del color, y en este caso, la mutación pío dominante es genética y bastante fuerte, lo que significa que si uno de los padres es pío dominante, hay una alta probabilidad de que las crías también lo sean.',
-        ]}
-        crt={[
-          {
-            title: "Patron de plumaje",
-            listcrt: [
-              "Los periquitos pío dominantes tienen un plumaje en el que el color base (que puede ser verde, azul o cualquier otro color) está interrumpido por áreas de blanco o amarillo en varias partes del cuerpo.",
-              "El patrón puede variar significativamente entre un periquito y otro, lo que hace que no haya dos periquitos píos exactamente iguales. Algunas áreas del cuerpo pueden ser completamente blancas o amarillas, mientras que otras conservan los colores del periquito tradicional.",
-              "El color de la cabeza también puede ser parcialmente blanco o amarillo, en lugar de cubrirse totalmente de ese color como en los periquitos estándar.",
-            ],
-          },
-          {
-            title: "Herencia Genetica",
-            listcrt: [
-              'La mutación "pío dominante" se transmite de manera dominante, lo que significa que si uno de los padres tiene esta mutación, hay una alta probabilidad de que las crías hereden el patrón pío.',
-              "A diferencia del pío recesivo, en el cual ambos padres deben portar el gen para que el rasgo se exprese, en el pío dominante solo uno de los padres necesita ser pío para que los hijos puedan tener la mutación.",
-            ],
-          },
-        ]}
-      />
+      />      
       <SpacialCard
         title="Periquito Cara Negra"
         imagef={p_caranegra}
