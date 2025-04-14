@@ -17,9 +17,7 @@ import p_lacewingl from "../assets/images/images-m-patron-plumas/periquito-lacew
 // imagenes periquito texas
 import p_texas from "../assets/images/images-m-patron-plumas/periquito-texas-clearbody.jpg";
 import p_texasl from "../assets/images/images-m-patron-plumas/periquito-texas-clearbody-lupa.png";
-// imagenes periquit fallow
-import p_fallow from "../assets/images/images-m-patron-plumas/periquito-fallow.jpg";
-import p_fallowl from "../assets/images/images-m-patron-plumas/periquito-fallow-lupa.png";
+
 
 function PageLigadasAlSexo() {
   return (
@@ -215,38 +213,7 @@ function PageLigadasAlSexo() {
             ],
           },
         ]}
-      />
-      <SpacialCard
-        title="Periquito Fallow"
-        imagef={p_fallow}
-        imagelup={p_fallowl}
-        text={[
-          "El periquito fallow es una mutación genética relativamente rara en los periquitos (Melopsittacus undulatus), conocida por su apariencia única que combina una coloración suave con una alteración en la intensidad del pigmento en las plumas. Esta mutación está relacionada con una reducción en la cantidad de pigmento en el cuerpo del ave, lo que da lugar a un tono más claro y suave en su plumaje, especialmente en las áreas donde normalmente tendría una coloración más intensa.",
-        ]}
-        crt={[
-          {
-            title: "Patrón de plumaje",
-            listcrt: [
-              "Los periquitos fallow tienen un plumaje de color más suave y deslavado en comparación con otras mutaciones. La característica más notable es la falta de intensidad en los pigmentos amarillos o verdes, lo que les da una apariencia más pálida.",
-              "El color básico puede variar entre verde, azul o amarillo, pero siempre presenta una tonalidad más suave. Es común que el plumaje tenga una especie de tono apagado o deslavado, y las marcas o patrones de las alas y el cuerpo son menos intensos que los de otras variedades.",
-            ],
-          },
-          {
-            title: "Ojos y rostro",
-            listcrt: [
-              "Una de las características más llamativas de los periquitos fallow es que suelen tener ojos oscuros o ligeramente oscuros. Esto les da un aspecto más suave y melancólico en comparación con otras mutaciones que pueden tener ojos rojos (como los periquitos lutinos o albinos).",
-              "El rostro también puede parecer más pálido, con una coloración que se desvanece hacia el resto del cuerpo, lo que añade a su aspecto sutil y delicado.",
-            ],
-          },
-          {
-            title: "Herencia genética",
-            listcrt: [
-              "La mutación fallow es recesiva, lo que significa que ambos padres deben portar el gen recesivo para que la mutación se exprese en la descendencia. Si solo un progenitor es portador, la probabilidad de que los descendientes muestren la mutación es baja.",
-              "Aunque es una mutación recesiva, los periquitos fallow pueden ser cruzados con otras mutaciones de colores, lo que puede dar lugar a una amplia variedad de combinaciones de colores, pero siempre con el carácter de una coloración más suave y menos saturada.",
-            ],
-          },
-        ]}
-      />
+      />      
     </div>
   );
 }
