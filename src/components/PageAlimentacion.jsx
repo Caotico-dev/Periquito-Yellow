@@ -1,7 +1,33 @@
-import SimpleCard from "./SimpleCard";
+import SimpleCard from "./SimpleCard.jsx";
+import ImagesViewer from "./ImagesViewer.jsx";
+import alpiste from "../assets/images/images-alimentacion/alpiste.jpg";
+import apio from "../assets/images/images-alimentacion/apio.webp";
+import mijo_blaco from "../assets/images/images-alimentacion/mijo blanco.webp";
+import mijo_rojo from "../assets/images/images-alimentacion/mijo rojo.jpg";
 function PageAlimentacion() {
   return (
     <div className="container">
+      <ImagesViewer
+        title="Alimentos Recomendados"
+        images={[
+          {
+            src: alpiste,
+            caption: "Alpiste",
+          },
+          {
+            src: apio,
+            caption: "Apio",
+          },
+          {
+            src: mijo_blaco,
+            caption: "Mijo Blanco",
+          },
+          {
+            src: mijo_rojo,
+            caption: "Mijo Rojo ",
+          },
+        ]}
+      />
       <SimpleCard
         title="Alimentacion"
         text={[
