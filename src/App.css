@@ -346,6 +346,7 @@
   }
   .sc-subtopics-text {
     font-size: small;
+    text-align: justify;
   }
 }
 /* Spacial Card */
@@ -471,5 +472,49 @@
   .spacial-card-container-crt {
     overflow-y: none;
     height: auto;
+  }
+}
+/* ImagesViewer */
+.imagesviewer-title {
+  text-align: center; 
+  color: var(--azul-claro);
+  border: solid 1px var(--verde-claro);
+  padding: 0.25rem;
+  margin: 0;
+ 
+}
+
+.container-imagesviewer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 0.25rem;
+  border: solid 1px var(--verde-claro); 
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.figure-imagesviewer {
+  margin: 0;
+}
+
+.imagesviewer {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.caption-imagesviewer {
+  margin-top: 8px;
+  /* font-size: 0.9rem; */
+  color: var(--azul-claro);
+}
+@media (min-width: 340px) and (max-width: 440px) {
+  .container-imagesviewer{
+    display: flex;
+    flex-direction: column;
+  }  
+  .imagesviewer-title,
+  .caption-imagesviewer{
+    font-size: small;
   }
 }
