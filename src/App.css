@@ -346,6 +346,7 @@
   }
   .sc-subtopics-text {
     font-size: small;
+    text-align: justify;
   }
 }
 /* Spacial Card */
