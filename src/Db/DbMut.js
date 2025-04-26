@@ -1,45 +1,36 @@
-// Color dominantes
-const ColorD = [
-  { Color: "Verde", Mutación: "Do" },
-  { Color: "Cara Amarilla", Mutación: "Do" },
-  { Color: "Cara negra", Mutación: "Do" },
-];
+// Mutaciones dominantas "Do"
+// Mutaciones recesivas "Rec"
+// Mutaciones ligadas al sexo "Lsex"
 
+// Colores como Map
+const ColoresMap = new Map([
+  ["Verde", "Do"],
+  ["Cara Amarilla", "Do"],
+  ["Cara negra", "Do"],
+  ["Azul", "Rec"]
+]);
 
-// Color recesivos
-const ColorR = [{ Color: "Azul", Mutación: "Rec" }];
+// PatronM como Map (unificamos las claves)
+const PatronMMap = new Map([
+  ["Pio Dominante", "Doc"],
+  ["Perlado", "Doc"],
+  ["Ancestral", "Doc"],
+  ["Opalino", "LSex"],
+  ["Pio Recesivo", "Rec"]
+]);
 
+// PatronP como Map (unificamos claves en una sola propiedad)
+const PatronPMap = new Map([
+  ["Alas Claras", "Rec"],
+  ["Alas grises", "Rec"],
+  ["Diluido", "Rec"],
+  ["Fallow", "Rec"],
+  ["Alas Negras", "Rec"],
+  ["Albino", "Rec"],
+  ["Lutino", "Rec"],
+  ["Canela", "Rec"],
+  ["Lacewing", "Rec"],
+  ["Texas", "Rec"]
+]);
 
-export { ColorD, ColorR };
-
-// Mutacion patron dominantes
-const PatronM = [
-  { PatronM: "Pio Dominante", Mutacion: "Doc" },
-  { PatronM: "Perlado", Mutacion: "Doc" },
-  { PatronM: "Ancestral", Mutacion: "Doc" },
-];
-// Mutacion patron recesivas
-const PatronR = [
-  { PatronR: "Pio Recesivo", Mutacion: "Rec" }
-]
-// Mutacion patron ligada al sexo
-const PatronL = [
-  { PatronL: "Opalino", Mutación: "LSex" }
-]
-// Mutacion patron plumas
-const PatronPR = [
-  { PatronPR: "Alas Claras", Mutación: "Rec" },
-  { PatronPR: "Alas grises", Mutación: "Rec" },
-  { PatronPR: "Diluido", Mutación: "Rec" },
-  { PatronPR: "Fallow", Mutación: "Rec" },
-  { PatronPR: "Alas Negras", Mutación: "Rec" },
-]
-const PatronPL = [
-  { PatronPL: "Albino", Mutación: "Rec" },
-  { PatronPL: "Lutino", Mutación: "Rec" },
-  { PatronPL: "Canela", Mutación: "Rec" },
-  { PatronPL: "Lacewing", Mutación: "Rec" },
-  { PatronPL: "Texas", Mutación: "Rec" },
-]
-
-export { PatronM, PatronR, PatronL, PatronPR, PatronPL };
+export { ColoresMap, PatronMMap, PatronPMap };

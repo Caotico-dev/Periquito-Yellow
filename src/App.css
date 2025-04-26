@@ -130,6 +130,7 @@
 .container {
   margin: 0 auto;
   max-width: 80%;
+  justify-items: center;
 }
 .border {
   background-color: var(--blanco-oscuro);
@@ -523,4 +524,126 @@
   .caption-imagesviewer{
     font-size: small;
   }
+}
+/* Calculador genetica*/
+.container-calc{
+  display: grid;
+  width: 50%;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto 1fr auto ;
+  gap: 0.25rem;  
+  grid-template-areas: "t t"
+                       "m h "
+                       "r b"  ;
+
+}
+.calc-title{
+  grid-area: t;
+  margin: 0.25rem;
+  text-align: center;
+  color: var(--azul-claro);
+}
+.calc-label{
+  color: var(--azul-claro);
+}
+.calc-color{
+  font-size: large;
+  padding: 0.25rem;
+  border-color: var(--azul-oscuro);
+  color: var(--azul-oscuro);
+}
+.opt-colores{}
+.calc-patron{
+  font-size: large;
+  padding: 0.25rem;
+  border-color: var(--verde-oscuro);
+  color: var(--verde-oscuro);
+}
+.calc-patron-pluma{
+  font-size: large;
+  padding: 0.25rem;
+  border-color: var(--azul-oscuro);
+  color: var(--azul-oscuro);
+}
+.calc-macho{
+  grid-area: m;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly; 
+  border: 1px solid var(--azul-claro);
+  padding: 0.25rem;
+}
+.cont-macho{
+  text-align: left;
+  margin: 0.25rem;
+  color: var(--verde-claro);
+}
+.cont-macho::after{
+  content: " ♂️";
+}
+.calc-hembra{
+  grid-area: h;display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-evenly;
+  border: 1px solid var(--verde-claro); 
+  padding: 0.25rem;
+}
+.cont-hembra{
+  color: var(--azul-claro);
+  margin: 0.25rem;
+}
+.cont-hembra::after{
+  content: " ♀️";
+}
+.calc-btn{
+  grid-area: b;
+  margin: 0.25rem;
+  /* width: 20rem; */
+  /* height: 4rem; */
+  font-size: medium;
+  /* background-color: var(--verde-claro); */
+  color: var(--blanco-oscuro);
+  border: none;
+  border-radius: 1rem;
+  font-size: large;
+  cursor: pointer;
+  /* transition: background-color 0.5s, color 0.5s; */
+  animation: btn-color 2s infinite alternate;
+  animation-play-state: running;
+}
+@keyframes btn-color {
+  0%{
+    background-color: var(--azul-claro);
+  }  
+  35%{
+    background-color: var(--verde-oscuro);
+  }
+  70%{
+    background-color: var(--azul-oscuro);
+  }
+  100%{
+    background-color: var(--verde-oscuro)
+  }
+}
+.calc-btn:hover {
+  /* background-color: var(--verde-oscuro); */
+  /* color: var(--blanco-claro); */
+  animation-play-state: paused;
+}
+.calc-result{
+  grid-area: r;
+  border: 2px solid var(--blanco-claro);
+}
+.table-head{
+  background-color: var(--azul-oscuro);
+  color: var(--blanco-oscuro);
+  text-align: center;
+  padding: 0.25rem;
+}
+.table-field{
+  text-align: center;
+  padding: 0.25rem;
+  color: var(--azul-oscuro);
 }
