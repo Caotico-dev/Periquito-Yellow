@@ -6,7 +6,7 @@
 const ColoresMap = new Map([
   ["Verde", "Do"],
   ["Cara Amarilla", "Do"],
-  ["Cara negra", "Do"],
+  ["Cara Negra", "Do"],
   ["Azul", "Rec"]
 ]);
 
@@ -21,16 +21,16 @@ const PatronMMap = new Map([
 
 // PatronP como Map (unificamos claves en una sola propiedad)
 const PatronPMap = new Map([
-  ["Alas Claras", "Rec"],
-  ["Alas grises", "Rec"],
-  ["Diluido", "Rec"],
-  ["Fallow", "Rec"],
-  ["Alas Negras", "Rec"],
-  ["Albino", "Rec"],
-  ["Lutino", "Rec"],
-  ["Canela", "Rec"],
-  ["Lacewing", "Rec"],
-  ["Texas", "Rec"]
+  ["Alas Claras", "ACRec"],
+  ["Alas grises", "AGRec"],
+  ["Diluido", "DRec"],
+  ["Fallow", "FRec"],
+  ["Alas Negras", "ANRec"],
+  ["Albino", "LSex"],
+  ["Lutino", "LSex"],
+  ["Canela", "CLSex"],
+  ["Lacewing", "GLSex"],
+  ["Texas", "TSex"]
 ]);
 
 export { ColoresMap, PatronMMap, PatronPMap };
