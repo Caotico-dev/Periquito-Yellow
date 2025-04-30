@@ -141,7 +141,9 @@ function PageCalculadora() {
             </thead>
             <tbody>
               <tr>
-                <th scope="row"></th>
+                <th className="table-head sign-m" scope="row">
+                  Mutación
+                </th>
                 <td className="table-field">N/A</td>
                 <td className="table-field">N/A</td>
                 <td className="table-field">N/A</td>
@@ -153,6 +155,30 @@ function PageCalculadora() {
                 <td className="table-field">N/A</td>
                 <td className="table-field">N/A</td>
                 <td className="table-field">N/A</td>
+              </tr>
+              <tr>
+                <th className="table-head sign-h" scope="row">
+                  Mutación
+                </th>
+                <td className="table-field">N/A</td>
+                <td className="table-field">N/A</td>
+                <td className="table-field">N/A</td>
+              </tr>
+              <tr>
+                <th className="table-head" scope="row">
+                  Porcentaje:{" "}
+                </th>
+                <td className="table-field">N/A</td>
+                <td className="table-field">N/A</td>
+                <td className="table-field">N/A</td>
+              </tr>
+              <tr>
+                <th className="table-head" scope="row">
+                  Mensaje:
+                </th>
+                <td className="table-field" colSpan={3}>
+                  Sin coincidencia especial
+                </td>
               </tr>
             </tbody>
           </table>
