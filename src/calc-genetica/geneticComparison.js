@@ -302,3 +302,5 @@ function PatronPlumaComparison(PlumaM, PlumaF) {
 //     }
 // }
 // )();
+
+export { ColorComparison, PatronComparison, PatronPlumaComparison };
