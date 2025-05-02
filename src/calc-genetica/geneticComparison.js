@@ -1,14 +1,14 @@
 import { ColoresMap, PatronMMap, PatronPMap } from "../Db/DbMut.js";
 
-const result = {
-    MutationF: "Sin coincidencia especial",
-    MutationM: "Sin coincidencia especial",
-    PorcentageF: "0%",
-    PorcentageM: "0%",
-    Message: "Sin coincidencia especial"
-}
-
 function ColorComparison(colorM, colorF) {
+
+    const result = {
+        MutationF: "Sin coincidencia especial",
+        MutationM: "Sin coincidencia especial",
+        PorcentageF: "0%",
+        PorcentageM: "0%",
+        Message: "Sin coincidencia especial"
+    }
 
     if (colorM === undefined || colorF === undefined) {
         throw new Error("Both colors must be defined.");
@@ -69,8 +69,29 @@ function ColorComparison(colorM, colorF) {
         result.Message = `Ambos hijos seran ${colorM} y ${colorF}.`;
         return result;
     }
+    if (tipoF === "Do" && tipoM === "Rec") {
+        result.MutationM = colorM;
+        result.MutationF = colorF;
+        result.PorcentageF = "100%";
+        result.PorcentageM = "0%";
+        return result;
+    }
+    if (tipoM === "Do" && tipoF === "Rec") {
+        result.MutationM = colorM;
+        result.MutationF = colorF;
+        result.PorcentageF = "0%";
+        result.PorcentageM = "100%";
+        return result;
+    }
+    if (tipoM === "Rec" && tipoF === "Rec") {
+        result.MutationM = colorM;
+        result.MutationF = colorF;
+        result.PorcentageF = "50%";
+        result.PorcentageM = "50%";
+        return result;
+    }
 
-   
+
     return result;
 }
 
@@ -93,6 +114,13 @@ function PatronComparison(patronM, patronF) {
     }
     const tipoF = PatronMMap.get(patronF);
     const tipoM = PatronMMap.get(patronM);
+    const result = {
+        MutationF: "Sin coincidencia especial",
+        MutationM: "Sin coincidencia especial",
+        PorcentageF: "0%",
+        PorcentageM: "0%",
+        Message: "Sin coincidencia especial"
+    }
 
     // Dominant and Dominant
     if (tipoM === "Doc" && tipoF === "Doc") {
@@ -115,8 +143,8 @@ function PatronComparison(patronM, patronF) {
     if (tipoF === "Doc" && tipoM === "Rec") {
         result.MutationM = patronF;
         result.MutationF = patronM;
-        result.PorcentageF = "100%";
-        result.PorcentageM = "0%";
+        result.PorcentageM = "100%";
+        result.PorcentageF = "0%";
         result.Message = `Los hijo sera ${patronF} y portadores de ${patronM}.`;
         return result;
     }
@@ -195,6 +223,14 @@ function PatronPlumaComparison(PlumaM, PlumaF) {
     }
     const tipoF = PatronPMap.get(PlumaF);
     const tipoM = PatronPMap.get(PlumaM);
+    const result = {
+        MutationF: "Sin coincidencia especial",
+        MutationM: "Sin coincidencia especial",
+        PorcentageF: "0%",
+        PorcentageM: "0%",
+        Message: "Sin coincidencia especial"
+    }
+
     // Recessive and Recessive    
     // Alas Claras 
     if (tipoM === "ACRec" && tipoF === "ACRec") {
@@ -267,6 +303,7 @@ function PatronPlumaComparison(PlumaM, PlumaF) {
         result.MutationF = PlumaF;
         result.PorcentageM = "50%";
         result.PorcentageF = "50%";
+        result.Message = `Los hijos seran ${PlumaM} y ${PlumaF}.`;
         return result;
     }
     // Texas
@@ -275,6 +312,7 @@ function PatronPlumaComparison(PlumaM, PlumaF) {
         result.MutationF = PlumaF;
         result.PorcentageM = "50%";
         result.PorcentageF = "50%";
+        result.Message = `Los hijos seran ${PlumaM} y ${PlumaF}.`;
         return result;
     }
     // nothing in common

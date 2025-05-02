@@ -597,11 +597,35 @@
 .cont-hembra::after,.sign-h::after{
   content: " ♀️";
 }
-.calc-btn{
+.calc-action{
   grid-area: b;
+}
+.buzon-container{
+  position: relative;
+}
+.buzon-icon{
+  background-color: var(--verde-claro);
+  border: none;    
+  border-radius: 1rem;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+.buzon-dropdown{
+  position: absolute;
+  box-shadow: -1rem 1rem 7rem var(--blanco-oscuro);
+  z-index: 1;
+  /* display: none; */
+}
+.buzon-title{
   margin: 0.25rem;
-  /* width: 20rem; */
-  /* height: 4rem; */
+}
+.buzon-title,.buzon-text{
+  color: var(--azul-oscuro);
+}
+.calc-btn{
+  margin: 0.25rem;
+  width: 17rem;
+  height: 4rem;
   font-size: medium;
   /* background-color: var(--verde-claro); */
   color: var(--blanco-oscuro);
@@ -676,4 +700,11 @@
   .table-field{
     font-size: small;
   }
+  .buzon-title{
+    font-size: small;
+  }
+  .buzon-text{
+    font-size: small;
+  }
+
 }
