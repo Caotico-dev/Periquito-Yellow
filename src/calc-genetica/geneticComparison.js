@@ -315,6 +315,31 @@ function PatronPlumaComparison(PlumaM, PlumaF) {
         result.Message = `Los hijos seran ${PlumaM} y ${PlumaF}.`;
         return result;
     }
+    // Comun
+    if(tipoM === "Doc" && tipoF === "Doc") {
+        result.MutationM = PlumaM;
+        result.MutationF = PlumaF;
+        result.PorcentageM = "50%";
+        result.PorcentageF = "50%";
+        result.Message = `Los hijos seran ${PlumaM} y ${PlumaF}.`;
+        return result;
+    }
+    if(tipoM === "Doc" && tipoF){
+        result.MutationM = PlumaM;
+        result.MutationF = PlumaF;
+        result.PorcentageM = "100%";
+        result.PorcentageF = "0%";
+        result.Message = `Los hijo seran ${PlumaM} y portador de ${PlumaF}.`;
+        return result;
+    }
+    if(tipoF === "Doc" && tipoM){
+        result.MutationM = PlumaF;
+        result.MutationF = PlumaM;
+        result.PorcentageM = "100%";
+        result.PorcentageF = "0%";
+        result.Message = `Los hijo seran ${PlumaF} y portador de ${PlumaM}.`;
+        return result;
+    }
     // nothing in common
     if (tipoM !== tipoF) {
         result.MutationM = PlumaM;

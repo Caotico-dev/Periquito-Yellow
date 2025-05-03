@@ -30,7 +30,8 @@ const PatronPMap = new Map([
   ["Lutino", "LSex"],
   ["Canela", "CLSex"],
   ["Lacewing", "GLSex"],
-  ["Texas", "TSex"]
+  ["Texas", "TSex"],
+  ["Comun", "Doc"]
 ]);
 
 export { ColoresMap, PatronMMap, PatronPMap };
